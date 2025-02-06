@@ -46,7 +46,7 @@ Copy the sample environment file and update it with your model credentials:
 cp .env.example .env
 ```
 
-# Then, edit the `.env` file with your settings. For example:
+Then, edit the `.env` file with your settings. For example:
 
 ```env
 # Use HuggingFace for cloud-based inference:
