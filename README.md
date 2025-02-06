@@ -9,7 +9,7 @@ The system features a Gradio web interface that displays both the final answer a
 
 ### 1. Clone the Repository
 
-# Clone this repository to your local machine:
+Clone this repository to your local machine:
 
 ```bash
 git clone https://github.com/your_username/your_repo.git
@@ -18,7 +18,7 @@ cd your_repo
 
 ### 2. Create and Activate a Virtual Environment
 
-# Create a virtual environment using `venv` and activate it:
+Create a virtual environment using `venv` and activate it:
 
 ```bash
 python -m venv venv
@@ -32,7 +32,7 @@ source venv/bin/activate
 
 ### 3. Install Dependencies
 
-# Install all required Python libraries:
+Install all required Python libraries:
 
 ```bash
 pip install -r requirements.txt
@@ -40,7 +40,7 @@ pip install -r requirements.txt
 
 ### 4. Configure Environment Variables
 
-# Copy the sample environment file and update it with your model credentials:
+Copy the sample environment file and update it with your model credentials:
 
 ```bash
 cp .env.example .env
@@ -63,7 +63,7 @@ CONTROL_MODEL_ID=your_control_model_id_here
 ## Document Ingestion
 
 1. **Place Your PDFs:**  
-   # Put your PDF documents into the `data/` directory:
+   Put your PDF documents into the `data/` directory:
 
    ```bash
    mkdir data
@@ -71,7 +71,7 @@ CONTROL_MODEL_ID=your_control_model_id_here
    ```
 
 2. **Build the Vector Store:**  
-   # Run the following script to ingest PDFs, split them into chunks, generate embeddings, and create a persistent vector store in the `chroma_db/` directory:
+   Run the following script to ingest PDFs, split them into chunks, generate embeddings, and create a persistent vector store in the `chroma_db/` directory:
 
    ```bash
    python build_vectorstore.py
@@ -81,18 +81,18 @@ CONTROL_MODEL_ID=your_control_model_id_here
 
 ### Gradio Web Interface
 
-# Launch the Gradio interface by running:
+Launch the Gradio interface by running:
 
 ```bash
 python gradio_app.py
 ```
 
-# This will start a web server where you can type in your questions.
-# The interface displays both the final answer and a reasoning log that details the agent’s decision process.
+This will start a web server where you can type in your questions.
+The interface displays both the final answer and a reasoning log that details the agent’s decision process.
 
 ### Command-Line Interface
 
-# Alternatively, you can run the system from the command line:
+Alternatively, you can run the system from the command line:
 
 ```bash
 python main.py "Your question here"
