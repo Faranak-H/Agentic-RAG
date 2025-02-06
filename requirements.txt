@@ -1,0 +1,32 @@
+# Environment management
+python-dotenv==1.0.1
+
+# Web UI
+gradio==5.15.0
+
+# Langgraph framework (for the state graph and agent functionality)
+langgraph==0.2.69
+
+# LangChain core (for document schema, text splitting, etc.)
+langchain==0.3.17
+
+# Community extensions for LangChain (document loaders and vector store wrappers)
+langchain-community==0.3.16
+
+# HuggingFace embeddings integration for LangChain
+langchain-huggingface==0.1.2
+
+# Smolagents (for lightweight AI agents)
+smolagents==1.6.0
+
+# Chroma vector store (used by the community vector store wrapper)
+chromadb==0.6.3
+
+# PDF processing (required by the PyPDFLoader)
+pypdf==5.2.0
+
+# Sentence-transformers (for the HuggingFace embedding model)
+sentence-transformers==3.4.1
+
+# Transformers (commonly needed by HuggingFace-based models)
+transformers==4.48.2
