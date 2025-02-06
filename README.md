@@ -1,7 +1,7 @@
 # Agentic-RAG
 
 
-This project demonstrates an agentic Retrieval-Augmented Generation (RAG) system for answering technology-related questions.
+This project demonstrates an agentic Retrieval-Augmented Generation (RAG) system for answering questions related to any uploaded pdf. Here we use a whitepaper on Agents published by Google as an example for our knowledge base.
 It combines document retrieval from a pre-built Chroma vector store (created from PDF documents) with a two-step LLM reasoning workflow managed by Langgraph.
 The system features a Gradio web interface that displays both the final answer and a detailed reasoning log.
 
