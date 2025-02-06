@@ -101,19 +101,19 @@ python main.py "Your question here"
 ## How It Works
 
 - **Document Ingestion:**  
-  # The `build_vectorstore.py` script:
+  The `build_vectorstore.py` script:
   - Loads PDFs from the `data/` directory.
   - Splits documents into chunks (default: 1000 characters per chunk with 200 characters overlap).
   - Generates embeddings using the `sentence-transformers/all-mpnet-base-v2` model.
   - Creates and persists a Chroma vector store in the `chroma_db/` directory.
 
 - **Agentic RAG System:**  
-  # The system uses two LLMs:
+  The system uses two LLMs:
   - **Draft Model:** Generates a draft answer based on the retrieved document context.
   - **Control Model:** Evaluates the draft answer and decides whether further refinement is needed.
   
-  # The workflow is managed by Langgraph’s state graph, which logs detailed reasoning at each step.
-  # This log is then displayed in the Gradio interface alongside the final answer.
+  The workflow is managed by Langgraph’s state graph, which logs detailed reasoning at each step.
+  This log is then displayed in the Gradio interface alongside the final answer.
 
 - **Model Selection:**  
   - **HuggingFace Models:** Recommended for cloud-based inference. Requires an API token and provides scalable, production-grade performance.
